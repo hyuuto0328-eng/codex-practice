@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>かんたん電卓</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <header><p class="eyebrow">毎日のちょっとした計算に</p><h1>かんたん電卓</h1></header>
+    <section class="screen" aria-label="計算表示">
+      <p id="expression">数字を入力してください</p>
+      <output id="display" aria-label="入力・計算結果" aria-live="polite">0</output>
+    </section>
+    <div class="keys" aria-label="電卓のボタン">
+      <button class="clear wide" data-action="clear">クリア</button>
+      <button class="operator" data-op="÷" aria-label="割る">÷</button>
+      <button data-number="7">7</button><button data-number="8">8</button><button data-number="9">9</button>
+      <button class="operator" data-op="×" aria-label="掛ける">×</button>
+      <button data-number="4">4</button><button data-number="5">5</button><button data-number="6">6</button>
+      <button class="operator" data-op="−" aria-label="引く">−</button>
+      <button data-number="1">1</button><button data-number="2">2</button><button data-number="3">3</button>
+      <button class="operator" data-op="+" aria-label="足す">+</button>
+      <button class="zero" data-number="0">0</button><button data-number="." aria-label="小数点">.</button>
+      <button class="equals" data-action="equals" aria-label="計算する">=</button>
+    </div>
+    <p class="help">数字 → 計算記号 → 数字 → ＝ の順に操作<br>キーボード入力にも対応しています</p>
+  </main>
+</body>
+</html>
